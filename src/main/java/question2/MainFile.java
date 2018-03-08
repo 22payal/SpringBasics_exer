@@ -29,14 +29,16 @@ public class MainFile {
 
         System.out.println("output of question7 .....scope of bean is set as prototype");
 
-        restaurant.getHotDrink().prepareHotDrink();
+        System.out.println(applicationContext.isPrototype("teaRestaurant"));
 
 
         Restaurant restaurant2 = applicationContext.getBean("teaRest",Restaurant.class);
 
         System.out.println("output of question7 .....scope of bean is set as singleton");
+        
+         System.out.println(applicationContext.isSingleton("teaRest"));
 
-        restaurant2.getHotDrink().prepareHotDrink();
+        
 
 
     }

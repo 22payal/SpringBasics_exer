@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:lang="http://www.springframework.org/schema/lang"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang.xsd">
+
+    <bean id="complexBean" class="spring.question5.Complex">
+
+        <property name="list">
+            <list>
+                <value>a1</value>
+                <value>a2</value>
+                <value>a3</value>
+            </list>
+        </property>
+
+        <property name="set">
+            <set>
+                <value>x1</value>
+                <value>x2</value>
+                <value>x3</value>
+            </set>
+        </property>
+
+        <property name="map">
+            <map>
+                <entry key="1" value="xyz"></entry>
+                <entry key="2" value="abc"></entry>
+                <entry key="3" value="pqr"></entry>
+            </map>
+        </property>
+    </bean>
+</beans>

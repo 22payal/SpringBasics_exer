@@ -6,7 +6,7 @@
     <bean id="Tea" class="question2.Tea"></bean>
 
 
-    <bean name="teaRestaurant" class="question2.Restaurant" >
+    <bean name="teaRestaurant" class="question2.Restaurant" scope="prototype" >
         <property name="hotDrink" ref="Tea"></property>
     </bean>
 
